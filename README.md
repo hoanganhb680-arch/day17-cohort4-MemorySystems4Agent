@@ -35,7 +35,7 @@ Sau khi hoàn thành, các bạn cần có khả năng:
 ├── data/            # dữ liệu benchmark dùng chung
 │   ├── conversations.json
 │   └── advanced_long_context.json
-└── src/             # bản scaffold dành cho sinh viên (pseudocode + TODO)
+└── src/             # bản lab đã hoàn thiện, gồm agent, benchmark và test
     ├── model_provider.py
     ├── config.py
     ├── memory_store.py
@@ -153,6 +153,8 @@ OPENAI_API_KEY=...
 
 ## Chạy benchmark và test
 
+Benchmark chạy offline chỉ cần Python; cài `pytest` để chạy test. Các package LangChain ở phần setup chỉ cần khi chọn chế độ live với provider tương ứng. Xem `src/README.md` để biết biến môi trường, luồng memory và phân tích kết quả thực tế.
+
 Sau khi hoàn thiện `src/`, chạy từ root repo:
 
 ```bash
@@ -174,7 +176,7 @@ Nếu các bạn là sinh viên:
 
 Nếu các bạn là giảng viên hoặc reviewer:
 
-- dùng `src/` để đánh giá scaffold giao cho sinh viên và kết quả hoàn thiện cuối cùng
+- dùng `src/` để đánh giá triển khai, benchmark và test đã hoàn thiện
 
 ## Tài liệu nên đọc tiếp
 
